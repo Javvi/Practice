@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 
+By: Javier Dominguez
+Date of last successful run April 25th, 2018
+COP3834C-01 Web Application Development
+Bonus Project
+-->
+<html>
+<head>
+<title> Bonus Project </title>
+</head>
+<style>
+#particles-js{
+position: fixed; 
+top: 0;
+left: 0;
+z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background-color: maroon;
+}
+#header {
+color: white;
+text-align: center;
+font-family: Times New Roman;
+text-shadow: 4px 3px black;
+}
+
+p{
+color: white;
+font-family: Times New Roman;
+}
+
+li a:hover {
+    background-color: firebrick;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	font-size: 30px;
+	font-family: Times New Roman;
+    padding: 14px 16px;
+    text-decoration: none;
+	float: right;
+}
+</style>
+<body>
+
+   
+	  <div id="navBarDiv">
+	<ul>
+	<li><img src="http://images.clipartpanda.com/sandwich-clipart-sandwich-parts.png" width="100" height"50" align="left"></li>
+ 
+ 
+  <li><a id="checkout" href="CheckoutPage.html">Checkout</a></li>
+   <li><a id="menu" href="Options.html">Menu</a></li>
+   <li><a id="home" href="index.html">Home</a></li>
+	</ul>
+    </div>
+ 
+
+
+<h1 id="header">El Dorado Sub Shop</h1>
+<div id="menuDiv" align="center">
+<img src="https://jonsmithsubs.com/img/deli.jpg" alt="Subs" width="600" height="300" align="center">
+<p class="1" style="font-size: 40px;">
+"Where the food is great, and the customers are greater"
+</p>
+<br>
+<br> 
+<p class="2" style="font-size: 20px;">
+<img src="http://1zwnbj5wg7k1hexgh2ylau8l.wpengine.netdna-cdn.com/wp-content/themes/Cedar-Desktop/images/menu-btn.png" width="250" height="200" align="center">
+Our family friendly menu includes both vegetarian and meat-lover delights.<br>
+
+
+</p>
+<br>
+<p class="3" style="font-size: 20px;">
+<img src="https://thecliparts.com/wp-content/uploads/2016/07/purchase-clipart-3.png" width="250" height="100" align="center">
+Sub meals can be purchased both for in-store consumption or to go at no added cost. 
+</p><br>
+
+<p style="font-size: 12px; font-family: castellar;">
+Contact us at 863.123.4567 <br>
+4700 Research Way, Lakeland, FL 33812
+<br>
+Store hours: M-F 8:00am - 10:00pm.
+</p><br>
+
+<
+</div>
+
+
+
+<div id="particles-js"></div>
+
+
+
+
+<script src="particleBackground.js"></script>
+<script>
+particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+})
+
+</script>
+</body>
+</html>

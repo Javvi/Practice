@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- 
+By: Javier Dominguez
+Date of last successful run April 25th, 2018
+COP3834C-01 Web Application Development
+Bonus Project
+-->
+<html>
+<head>
+<title> Bonus Project </title>
+</head>
+<style>
+#particles-js{
+position: fixed; 
+top: 0;
+left: 0;
+z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background-color: maroon;
+}
+#header {
+color: white;
+text-align: center;
+font-family: Times New Roman;
+text-shadow: 4px 3px black;
+}
+
+p{
+color: white;
+font-family: Times New Roman;
+}
+
+li a:hover {
+    background-color: firebrick;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	font-size: 30px;
+	font-family: Times New Roman;
+    padding: 14px 16px;
+    text-decoration: none;
+	float: right;
+}
+
+#payment{
+color: white;
+font-size: 40px;
+font-family: Times New Roman;
+}
+</style>
+<body>
+
+   
+	  <div id="navBarDiv">
+	<ul>
+	<li><img src="http://images.clipartpanda.com/sandwich-clipart-sandwich-parts.png" width="100" height"50" align="left"></li>
+ 
+ 
+  <li><a id="checkout" href="CheckoutPage.html">Checkout</a></li>
+   <li><a id="menu" href="Options.html">Menu</a></li>
+   <li><a id="home" href="index.html">Home</a></li>
+	</ul>
+    </div>
+	
+	
+
+ <div id="particles-js"></div>
+
+
+
+
+<script src="particleBackground.js"></script>
+<script>
+particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+})
+
+</script>
+
+
+	<h2 style="color: white; font-size: 40px; font-family: Times New Roman;">Checkout</h2>
+<div id="payment">
+<form>
+ <label>Please enter a valid credit card number</label> <input type="number" name="ccNum" value=""><br>
+ <label>Please enter the expiration date (mo/yr) of your credit card ex. 07/17</label> <input type="number" name="ccExp" value=""><br>
+ <label>Please enter your 3-digit CSV number</label><input type="number" name="csvNum" value=""><br>
+ <label>Please enter the first and last name associated with your credit card</label> <input type="string" name="ccName" value=""><br>
+ <label>Please enter your phone number, no spaces or special characters</label><input type="number" name="phoneNum" value=""><br>
+ </form>
+ 
+ <button onClick="thanks()">Submit Payment</button><br>
+ </div>
+<script>
+
+
+function thanks(){
+document.getElementById("payment").innerHTML=" Thank you for your purchase ";
+}
+</script>
+</body>
+</html>

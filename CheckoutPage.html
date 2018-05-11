@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- 
+By: Javier Dominguez
+Date of last successful run April 25th, 2018
+COP3834C-01 Web Application Development
+Bonus Project
+-->
+<html>
+<style>
+#particles-js{
+position: fixed; 
+top: 0;
+left: 0;
+z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background-color: maroon;
+}
+#header {
+color: white;
+text-align: center;
+font-family: Times New Roman;
+text-shadow: 4px 3px black;
+}
+
+p{
+color: white;
+font-family: Times New Roman;
+}
+
+li a:hover {
+    background-color: firebrick;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	font-size: 30px;
+	font-family: Times New Roman;
+    padding: 14px 16px;
+    text-decoration: none;
+	float: right;
+}
+
+label{
+color: white;
+font-family: Times New Roman;
+font-size: 40px;
+}
+</style>
+<body>
+ <div id="navBarDiv">
+	<ul>
+	<li><img src="http://images.clipartpanda.com/sandwich-clipart-sandwich-parts.png" width="100" height"50" align="left"></li>
+ 
+ 
+  <li><a id="checkout" href="CheckoutPage.html">Checkout</a></li>
+   <li><a id="menu" href="Options.html">Menu</a></li>
+   <li><a id="home" href="index.html">Home</a></li>
+	</ul>
+    </div>
+	
+<h2 style="color: white; font-size: 40px; font-family: Times New Roman;">Checkout</h2>
+
+<form method="post" action="checkoutPHP.php">
+ <label>Please enter the number of ham, salami, and asiago cheese subs</label> <input type="number" name="opt1Amt" value=""><br>
+ <label>Please enter the number of steak sandwiches</label><input type="number" name="opt2Amt" value=""><br>
+ <label>Please enter the number of veggie subs</label> <input type="number" name="opt3Amt" value=""><br>
+ <label>Please enter the number of 18 oz soft drinks</label><input type="number" name="opt4Amt" value=""><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<div id="particles-js"></div>
+
+<script src="particleBackground.js"></script>
+<script>
+particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+})
+
+</script>
+</body>
+</html>
